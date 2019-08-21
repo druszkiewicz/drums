@@ -59,3 +59,24 @@ audio.play();
 this ---
 this.innerHTML ---
 this.style.color = 'white'; ---
+
+** L.142
+
+//objekt
+var hauseKeeper1 = {
+    yearsOfExperience: 12,
+    name: "Jane",
+    cleaningRepertoire: ["bathrom", "lobby", "bedroom"]
+}
+
+// factory - constructor function
+function HauseKeeper (y,n,c) {  //nazwa z duej litery
+    this.yearsOfExperience = y; 
+    this.name=n;
+    this.cleaningRepertoire=c;
+}
+
+//wywołanie
+var hk1 = new HauseKeeper(10, "Anna", ["English", "French"]);
+
+
