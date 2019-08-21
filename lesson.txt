@@ -49,3 +49,13 @@ Cals(2,3,mul);
 // uruchomienie debuggera
 debugger; Shift + Enter
 Cals(2,3,mul);
+
+** L.140 
+
+//play sounds
+var audio = new Audio('sounds/tom-1.mp3');
+audio.play();
+
+this ---
+this.innerHTML ---
+this.style.color = 'white'; ---
