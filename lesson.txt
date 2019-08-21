@@ -1,17 +1,17 @@
-L.138
+** L.138
 
-//handleClick bez () - żeby nie wywołać od razu
+// handleClick bez () - żeby nie wywołać od razu
 document.querySelector('.drum').addEventListener('click', handleClick);
 
 function handleClick() {
    alert('just clicked');
 
-//funkcja anonimowa
+// funkcja anonimowa
 document.querySelector('.drum').addEventListener('click', function() {
    alert('just clicked');
 });
 
-//pętla po wszystkich buttonach
+// pętla po wszystkich buttonach
 var numberOfDrumButtons = document.querySelectorAll('.drum').length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
@@ -19,3 +19,33 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
       alert('just clicked');
    });
 }
+
+** L.139
+
+// Javascript w wikipedi + consola
+$0
+
+$0.innerHTML = "cos tam"
+
+$0.addEventListener('click', function () {
+console.log('I got click')
+})
+
+// przekazywanie funkkcji jako argumentu
+function add (num1, num2) { 
+return num1 + num2; 
+}
+
+function mul (num1, num2) { 
+return num1 * num2; 
+}
+
+function Cals (num1, num2, operator) {
+	return operator(num1, num2);
+}
+
+Cals(2,3,mul);
+
+// uruchomienie debuggera
+debugger; Shift + Enter
+Cals(2,3,mul);
