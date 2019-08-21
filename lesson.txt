@@ -79,4 +79,21 @@ function HauseKeeper (y,n,c) {  //nazwa z duej litery
 //wywołanie
 var hk1 = new HauseKeeper(10, "Anna", ["English", "French"]);
 
+** L.143
 
+or (var i = 0; i < numberOfDrumButtons; i++) {
+   document.querySelectorAll('.drum')[i].addEventListener('click', function(e) {
+      //alert('just clicked');
+      // console.log(this.innerHTML);
+      // this.style.color = 'white';
+      // console.log(e);
+
+      var buttonInnerHtml = this.innerHTML;
+
+      switch (buttonInnerHtml) {
+        case "w":
+          var tom1 = new Audio('sounds/tom-1.mp3');
+          tom1.play();  
+          break;
+
+          ..........................
