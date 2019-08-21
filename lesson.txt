@@ -97,3 +97,18 @@ or (var i = 0; i < numberOfDrumButtons; i++) {
           break;
 
           ..........................
+
+** L. 144, 145 - method
+function HauseKeeper (y,n,c) {
+    this.yearsOfExperience = y; 
+    this.name=n;
+    this.cleaningRepertoire=c;
+    this.clean=function () {
+        console.log("cleaded");
+    }
+}
+
+var hk1 = new HauseKeeper(10, "Anna", ["English", "French"]);
+
+//wywołanie metody
+hk1.clean();
