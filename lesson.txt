@@ -112,3 +112,13 @@ var hk1 = new HauseKeeper(10, "Anna", ["English", "French"]);
 
 //wywołanie metody
 hk1.clean();
+
+** L. 146
+// event listener na klawiaturę
+document.addEventListener("keydown", function (event) {
+  // 
+  //console.log(event.key);
+  playSound(event.key);  //przeniesione do funkcji z case... 
+})
+
+
