@@ -131,10 +131,10 @@ console.log(event);
 function anotherEventListener(typeOfEvent, callback) {
     
     //detect Event Code
-var eventThatHappend = {
-	eventType: "keypress",
-	key: "p",
-	duratonOfKeypress: 2,
+   var eventThatHappend = {
+	  eventType: "keypress",
+	  key: "p",
+	  duratonOfKeypress: 2,
 }
 
 if (eventThatHappend.eventType === typeOfEvent) {
@@ -147,6 +147,17 @@ if (eventThatHappend.eventType === typeOfEvent) {
 anotherEventListener("keypress", function (event) {
 console.log(event) 
 });
+
+** L.148
+
+//animacja do buttona
+function buttonAnimation(currentKey) {
+   var activeButton = document.querySelector('.' + currentKey);
+   activeButton.classList.add('pressed');
+   setTimeout(function() {
+      activeButton.classList.remove('pressed');
+   }, 200);
+}
 
 
 
