@@ -121,4 +121,32 @@ document.addEventListener("keydown", function (event) {
   playSound(event.key);  //przeniesione do funkcji z case... 
 })
 
+** L.147
+
+$0.addEventListener('click', function (event) {
+console.log(event);
+})
+
+// testowy listener z funkcją callback
+function anotherEventListener(typeOfEvent, callback) {
+    
+    //detect Event Code
+var eventThatHappend = {
+	eventType: "keypress",
+	key: "p",
+	duratonOfKeypress: 2,
+}
+
+if (eventThatHappend.eventType === typeOfEvent) {
+	callback(eventThatHappend);
+}
+
+}
+
+// i jego wywołanie - par. event może być dowolny...
+anotherEventListener("keypress", function (event) {
+console.log(event) 
+});
+
+
 
